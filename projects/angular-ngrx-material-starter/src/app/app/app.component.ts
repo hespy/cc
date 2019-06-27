@@ -20,7 +20,7 @@ import {
 } from '../core/core.module';
 
 @Component({
-  selector: 'anms-root',
+  selector: 'cc-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [routeAnimations]
@@ -33,13 +33,13 @@ export class AppComponent implements OnInit {
   logo = require('../../assets/logo.png');
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br', 'zh-cn', 'he'];
   navigation = [
-    { link: 'about', label: 'anms.menu.about' },
-    { link: 'feature-list', label: 'anms.menu.features' },
-    { link: 'examples', label: 'anms.menu.examples' }
+    { link: 'about', label: 'cc.menu.about' },
+    { link: 'feature-list', label: 'cc.menu.features' },
+    { link: 'examples', label: 'cc.menu.examples' }
   ];
   navigationSideMenu = [
     ...this.navigation,
-    { link: 'settings', label: 'anms.menu.settings' }
+    { link: 'settings', label: 'cc.menu.settings' }
   ];
 
   isAuthenticated$: Observable<boolean>;
