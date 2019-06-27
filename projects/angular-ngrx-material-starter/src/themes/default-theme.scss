@@ -1,5 +1,5 @@
-$cc-primary: mat-palette($mat-indigo, 800, 300, 900);
-$cc-accent: mat-palette($mat-light-blue);
-$cc-warn: mat-palette($mat-pink, 600);
+$cc-primary: mat-palette($mat-blue-gray, 800, 300, 900);
+$cc-accent: mat-palette($mat-orange);
+$cc-warn: mat-palette($mat-red);
 
 $cc-theme: mat-light-theme($cc-primary, $cc-accent, $cc-warn);
