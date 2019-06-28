@@ -22,6 +22,7 @@ export class ExamplesComponent implements OnInit {
   examples = [
     { link: 'todos', label: 'cc.examples.menu.todos' },
     { link: 'stock-market', label: 'cc.examples.menu.stocks' },
+    { link: 'food-hygiene', label: 'Food Hygiene' },
     { link: 'theming', label: 'cc.examples.menu.theming' },
     { link: 'crud', label: 'cc.examples.menu.crud' },
     {

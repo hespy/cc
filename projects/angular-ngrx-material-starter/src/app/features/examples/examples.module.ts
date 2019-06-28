@@ -27,6 +27,9 @@ import { NotificationsComponent } from './notifications/components/notifications
 import { ExamplesEffects } from './examples.effects';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { UserService } from './simple-state-management/user.service';
+import { FoodHygieneEffects } from './food-hygiene/food-hygiene.effects';
+import { FoodHygieneContainerComponent } from './food-hygiene/components/food-hygiene-container.component';
+import { FoodHygieneService } from './food-hygiene/food-hygiene.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
@@ -54,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
       TodosEffects,
       StockMarketEffects,
       BooksEffects,
-      FormEffects
+      FormEffects,
+      FoodHygieneEffects
     ])
   ],
   declarations: [
@@ -67,9 +71,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     CrudComponent,
     FormComponent,
     NotificationsComponent,
-    UserComponent
+    UserComponent,
+    FoodHygieneContainerComponent
   ],
-  providers: [StockMarketService, UserService]
+  providers: [StockMarketService, UserService, FoodHygieneService]
 })
 export class ExamplesModule {
   constructor() {}

@@ -12,6 +12,7 @@ import { CrudComponent } from './crud/components/crud.component';
 import { FormComponent } from './form/components/form.component';
 import { NotificationsComponent } from './notifications/components/notifications.component';
 import { UserComponent } from './simple-state-management/components/user.component';
+import { FoodHygieneContainerComponent } from './food-hygiene/components/food-hygiene-container.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,11 @@ const routes: Routes = [
         path: 'stock-market',
         component: StockMarketContainerComponent,
         data: { title: 'cc.examples.menu.stocks' }
+      },
+      {
+        path: 'food-hygiene',
+        component: FoodHygieneContainerComponent,
+        data: { title: 'Food Hygiene' }
       },
       {
         path: 'theming',
