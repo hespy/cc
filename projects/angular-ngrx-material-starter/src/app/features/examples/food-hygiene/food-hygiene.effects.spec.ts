@@ -11,7 +11,6 @@ import {
   ActionFoodHygieneRetrieveSuccess
 } from './food-hygiene.actions';
 import { FoodHygieneEffects, FOOD_HYGIENE_KEY } from './food-hygiene.effects';
-import { Stock } from './stock-market.model';
 import { FoodHygieneService } from './food-hygiene.service';
 import { Establishment } from './food-hygiene.model';
 
